@@ -229,7 +229,7 @@ class Transit {
  * Draw aspects
  * @param{Array<Object> | null} customAspects - posible custom aspects to draw;
  */
-  aspects(customAspects: FormedAspect[]): Transit {
+  aspects(customAspects?: FormedAspect[]): Transit {
     const aspectsList = customAspects != null && Array.isArray(customAspects)
       ? customAspects
       : new AspectCalculator(this.toPoints, this.settings).transit(this.data.planets)
