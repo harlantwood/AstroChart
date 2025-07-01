@@ -19,6 +19,7 @@
   "scripts": {
     "astrochart": "tsm bin/astrochart.ts",
     "test": "jest",
+    "test:w": "jest --watch",
     "test:coverage": "jest --coverage",
     "build": "webpack",
     "build:w": "webpack --watch",
